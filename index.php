@@ -11,6 +11,23 @@ and open the template in the editor.
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <div>TODO write content</div>
+
+
+        <form action="welcome.php"method="post">
+            <fieldset>
+                <legend>Login</legend>
+                <div><label for="firstname">Username:
+                        <input type="text" name="username" id="username"/></label>
+                </div>
+                <br>
+                <div><label for="password">Password:
+                        <input type="password" name="password" id="password"/></label></div>
+                        <br>
+                        <div>&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;  &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;<input type="submit" value="Login"/></div>
+            </fieldset>
+        </form>
     </body>
+</html>
+
+</body>
 </html>

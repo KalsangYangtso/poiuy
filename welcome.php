@@ -11,14 +11,19 @@ and open the template in the editor.
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
+<?php
+        $username = $_REQUEST['username'];
+
+        if ($username == 'Kevin Yank' )
+        {
+        echo 'Welcome, oh glorious leader!';
+        }
+        else
+        {
+        echo 'Welcome to our web site, ' .
         
-        <form action="welcome5.php"method="post">
-  <div><label for="firstname">Email:
-    <input type="text" name="email" id="email"/></label>
-  </div>
-  <div><label for="lastname">Last name:
-          <input type="password" name="password" id="password"/></label></div>
-  <div><input type="submit" value="Login"/></div>
-</form>
+        htmlspecialchars($username, ENT_QUOTES, 'UTF-8') . '!';
+        }
+        ?>
     </body>
 </html>
