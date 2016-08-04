@@ -24,7 +24,7 @@ if (!$conn) {
 }
 
 $sql = "INSERT INTO CUSTOMER ( email, password)
-VALUES ( 'john@example.com' , '*******')";
+VALUES ( " . "\"$email\"" . "," . "\"$password\"" . " )" ;
 
 if (mysqli_query($conn, $sql)) {
     echo "New record created successfully";
