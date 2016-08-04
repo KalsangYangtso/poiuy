@@ -15,97 +15,25 @@
     <legend>Sign Up</legend>
     <br>
         <fieldset>
-    <legend>Personal Information</legend>
+    <legend>SIGN UP</legend>
     <br>
-   First name:<br>
-  <input type="text" name="firstname">
-  <br>
-  Last name:<br>
-  <input type="text" name="lastname">
-  <br>
+ 
   Email :<br>
-  <input type="text" name="username">
+  <input type="text" name="CUserName">
   <br>
  
- UserName:<br>
-  <input type="text" name="username">
-  <br>
+ 
   Password:<br>
-  <input type="text" name="password">
+  <input type="password" name="CPassword">
   <br>
   </fieldset>
     <br>
-     <fieldset>
-        
-    <legend>Credit Card Info</legend>
-     <br>
-  Card No:<br>
-  <input type="text" name="cardno">
-  <br>
-    CVC No:<br>
-  <input type="" name="cvcno">
-  <br>
-  
-     </fieldset>
-    <br>
-   <fieldset>
-        
-    <legend>Billing Address</legend>
-     <br>
-  Building No:<br>
-  <input type="text" name="buildingno">
-  <br>
-   
-  Apartment No:<br>
-  <input type="text" name="apartmentno">
-  <br>
-
-  Zip code:<br>
-  <input type="" name="zipcode">
-  <br>
-   Street/ Avenue:<br>
-  <input type="text" name="street/avenue">
-  <br>
-  City:<br>
-  <input type="text" name="city">
-  <br>
-   State:<br>
-  <input type="text" name="state">
-  <br>
-  </fieldset>
-  <br>
-     <fieldset>
-    <legend>Shipping Address</legend>
-     <br>
-  Building No:<br>
-  <input type="text" name="buildingno">
-  <br>
-   
-  Apartment No:<br>
-  <input type="text" name="apartmentno">
-  <br>
-
-  Zip code:<br>
-  <input type="text" name="zipcode">
-  <br>
-   Street/ Avenue:<br>
-  <input type="text" name="street/avenue">
-  <br>
-  City:<br>
-  <input type="text" name="city">
-  <br>
-   State:<br>
-  <input type="text" name="state">
-  <br>
-
-  </fieldset>
-    <br>
-  <input type="submit" value="Register">
- <br>
+  <input type="submit" value="Register"/>
+ </br>
  
 </fieldset>
 </form>
-        <br>
+        <br></br>
         <p>Already have an account?</p>
         <a href="index.php">Click Here</a>
     </body>
