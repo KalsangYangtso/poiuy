@@ -24,7 +24,11 @@ and open the template in the editor.
                         <input type="password" name="password" id="password"/></label></div>
                         <br>
                         <div>&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;  &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;<input type="submit" value="Login"/></div>
-            </fieldset>
+         
+              
+            <p>Don't have an account?</p>
+        <a href="form.html.php">Click Here</a>
+           </fieldset>
         </form>
     </body>
 </html>
