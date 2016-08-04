@@ -11,6 +11,11 @@ and open the template in the editor.
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
+        
+        <a href="cart.html.php">Shopping Cart</a>
+          <a href="home.html.php">Home</a>
+          
+        
 <?php
         $username = $_REQUEST['username'];
 
