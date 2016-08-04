@@ -10,41 +10,7 @@ and open the template in the editor.
         <title></title>
     </head>
     <body>
-<?php
-      
-
-        $link = mysqli_connect('localhost', 'kay', 'dtycts16');
-
-        if (!$link) {
-            $output = 'Unable to connect to the Database Server.';
-            include'output.html.php';
-            exit();
-        }
-        if (!mysqli_set_charset($link, 'utf8')) {
-            $output = 'Unable to set database connection encoding.';
-            include'output.html.php';
-            exit();
-        }
-        if (!mysqli_select_db($link, 'kay')) {
-        
-            include'output.html.php';
-            exit();
-        }
-       
-        include'output.html.php';
-        
-       
-        if(!mysqli_query($link, $sql))
-        {
-           
-            include 'output.html.php';
-            exit();
-        }
-        
-    
-        include 'output.html.php';
-      
-
+ <?php
 $servername = "localhost";
 $username = "kay";
 $password = "dtycts16";
@@ -57,8 +23,8 @@ if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
 
-$sql = "INSERT INTO MyGuests (firstname, lastname, email)
-VALUES ('John', 'Doe', 'john@example.com')";
+$sql = "INSERT INTO CUSTOMER ( email, password)
+VALUES ( 'john@example.com' , '*******')";
 
 if (mysqli_query($conn, $sql)) {
     echo "New record created successfully";
@@ -67,6 +33,6 @@ if (mysqli_query($conn, $sql)) {
 }
 
 mysqli_close($conn);
-?>
+?> 
     </body>
 </html>
