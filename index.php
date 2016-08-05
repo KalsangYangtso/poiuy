@@ -23,8 +23,8 @@ if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
 
-$sql = "INSERT INTO CUSTOMER ( email, password)
-VALUES ( " . "\"$email\"" . "," . "\"$password\"" . " )" ;
+$sql = "INSERT INTO CUSTOMER ( email, cpassword)
+VALUES ( " . "\"$email\"" . "," . "\"$cpassword\"" . " )" ;
 
 if (mysqli_query($conn, $sql)) {
     echo "New record created successfully";

@@ -18,12 +18,13 @@ and open the template in the editor.
         <form action="welcome.php"method="post">
             <fieldset>
                 <legend>Login</legend>
-                <div><label for="firstname">Username:
-                        <input type="text" name="username" id="username"/></label>
+                <div><label for="email">Email:<br>
+                        <input type="text" name="email" id="email"/></label>
                 </div>
                 <br>
-                <div><label for="password">Password:
-                        <input type="password" name="password" id="password"/></label></div>
+                <div><label for="cpassword">Password:<br>
+                        
+                        <input type="password" name="cpassword" id="cpassword"/></label></div>
                         <br>
                         <div>&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;  &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
                             <input type="submit" value="Login"/></div>

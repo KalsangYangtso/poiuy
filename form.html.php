@@ -17,13 +17,13 @@
     <legend>SIGN UP</legend>
     <br>
  
-userName</br>
-  <input type="text" name="CUserName"/>
+Email:</br>
+  <input type="text" name="email"/>
   <br>
  
  
   Password:<br>
-  <input type="password" name="CPassword"/>
+  <input type="password" name="cpassword"/>
   </br>
   </fieldset>
     <br>
