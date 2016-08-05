@@ -13,7 +13,7 @@ and open the template in the editor.
     <body>
                 
 <?php
-        $username = $_REQUEST['username'];
+        $email = $_REQUEST['email'];
 
         if ($email == 'kaysangy@gmail' )
         {
