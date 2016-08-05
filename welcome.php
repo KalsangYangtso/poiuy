@@ -23,7 +23,7 @@ and open the template in the editor.
         {
         echo 'Welcome to our web site, ' .
         
-        htmlspecialchars($username, ENT_QUOTES, 'UTF-8') . '!';
+        htmlspecialchars($email, ENT_QUOTES, 'UTF-8') . '!';
         }
       
         ?><br>

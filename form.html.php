@@ -74,6 +74,8 @@ $servername = "localhost";
 $username = "kay";
 $password = "dtycts16";
 $dbname = "kay";
+$email ="email";
+$cpassword="cpassword";
 
 // Create connection
 $conn = mysqli_connect($servername, $username, $password, $dbname);
