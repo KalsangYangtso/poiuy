@@ -15,7 +15,7 @@ and open the template in the editor.
 <?php
         $username = $_REQUEST['username'];
 
-        if ($username == 'Kevin Yank' )
+        if ($email == 'kaysangy@gmail' )
         {
         echo 'Welcome, oh glorious leader!';
         }
