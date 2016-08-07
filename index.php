@@ -22,10 +22,12 @@ $conn = mysqli_connect($servername, $username, $password, $dbname);
 if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
+ $email = $_POST['email'];
+  $cpassword = $_POST['cpassword'];
 
 
-
- $sql="INSERT INTO CUSTOMER(email, cpassword ) values('".$_GET['email']."', '".$_GET['cpassword']."')";
+ $sql = 'INSERT INTO CUSTOMER ( email, cpassword)'
+            . 'values (' . "\"$email\"" . ',' . "\"$cpassword\")";
 
 $result = mysql_query($sql);
 
