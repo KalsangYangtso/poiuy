@@ -26,9 +26,7 @@ if (!$conn) {
   $cpassword = $_POST['cpassword'];
 
 
- $sql = 'INSERT INTO CUSTOMER ( email, cpassword)'
-            . 'values (' . "\"$email\"" . ',' . "\"$cpassword\")";
-
+ $sql = 'INSERT INTO CUSTOMER ( email, cpassword)'. 'values (' . "\"$email\"" . ',' . "\"$cpassword\");";
 $result = mysql_query($sql);
 
 if (mysqli_query($conn, $sql)) {
