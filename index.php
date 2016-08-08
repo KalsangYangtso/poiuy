@@ -10,35 +10,35 @@ and open the template in the editor.
         <title></title>
     </head>
     <body>
- <?php
-$servername = "localhost";
-$username = "kay";
-$password = "dtycts16";
-$dbname = "kay";
+  <?php
+    $servername = "localhost";
+    $username = "kay";
+    $password = "dtycts16";
+    $dbname = "kay";
+
 
 // Create connection
-$conn = mysqli_connect($servername, $username, $password, $dbname);
+    $conn = mysqli_connect($servername, $username, $password, $dbname);
 // Check connection
-if (!$conn) {
-    die("Connection failed: " . mysqli_connect_error());
-}
- $email = $_POST['email'];
-  $cpassword = $_POST['cpassword'];
+    if (!$conn) {
+        die("Connection failed: " . mysqli_connect_error());
+    }
 
+    // Escape user inputs for security
 
- $sql = 'INSERT INTO CUSTOMER ( email, cpassword)'. 'values (' . "\"$email\"" . ',' . "\"$cpassword\");";
-$result = mysql_query($sql);
+    $email = $_POST['email'];
+    $cpassword = $_POST['cpassword'];
+    $hash = md5(rand(0, 1000));
 
-if (mysqli_query($conn, $sql)) {
-    echo "New record created successfully";
-} else {
-    echo "Error: " . $sql . "<br>" . mysqli_error($conn);
-}
+    $sql = 'INSERT INTO CUSTOMER ( email, cpassword)'
+            . 'values (' . "\"$email\"" . ',' . "\"$cpassword\"" . ',' . "\"$hash\");";
 
+    if (mysqli_query($conn, $sql)) {
+        echo "New record created successfully";
+    } else {
+        echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+    }
 
-
-
-mysqli_close($conn);
-?> 
+?>
     </body>
 </html>

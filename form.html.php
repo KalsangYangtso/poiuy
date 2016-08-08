@@ -18,12 +18,12 @@
     <br>
  
 Email:</br>
-  <input type="text" name="email"/>
+  <input type="text" name="email" />
   <br>
  
  
   Password:<br>
-  <input type="password" name="cpassword"/>
+  <input type="password" name="cpassword" />
   </br>
   </fieldset>
     <br>
